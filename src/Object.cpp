@@ -7,25 +7,25 @@
 
 PhysicsEngine::Object::Object() {
 
-    a_sigma = nullptr;
-    v_sigma = nullptr;
-    sigma = nullptr;
+    a_sigma = 0;
+    v_sigma = 0;
+    sigma = 0;
 
-    a_x = nullptr;
-    a_y = nullptr;
-    v_x = nullptr;
-    v_y = nullptr;
-    p_x = nullptr;
-    p_y = nullptr;
+    a_x = 0;
+    a_y = 0;
+    v_x = 0;
+    v_y = 0;
+    p_x = 0;
+    p_y = 0;
 
-    f_x = nullptr;
-    f_y = nullptr;
-    t = nullptr;
+    f_x = 0;
+    f_y = 0;
+    t = 0;
 
-    m = nullptr;
+    m = 0;
 
     n = 0;
-    dt = 0.0;
+    dt = 1;
 }
 
 PhysicsEngine::Object::~Object() {
@@ -34,22 +34,22 @@ PhysicsEngine::Object::~Object() {
 
 void PhysicsEngine::Object::destroy() {
     if (n > 0) {
-        freeArray(a_sigma);
-        freeArray(v_sigma);
-        freeArray(sigma);
+        a_sigma = 0;
+        v_sigma = 0;
+        sigma = 0;
 
-        freeArray(a_x);
-        freeArray(a_y);
-        freeArray(v_x);
-        freeArray(v_y);
-        freeArray(p_x);
-        freeArray(p_y);
+        a_x = 0;
+        a_y = 0;
+        v_x = 0;
+        v_y = 0;
+        p_x = 0;
+        p_y = 0;
 
-        freeArray(f_x);
-        freeArray(f_y);
-        freeArray(t);
+        f_x = 0;
+        f_y = 0;
+        t = 0;
 
-        freeArray(m);
+        m = 0;
     }
 
     n = 0;

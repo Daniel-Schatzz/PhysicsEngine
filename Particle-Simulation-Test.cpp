@@ -41,7 +41,7 @@ Vector2 ComputeForce(Particle *particle) {
     return {0, float(particle->mass * -9.81)};
 }
 
-void RunSimulation() {
+int main() {
     float totalSimulationTime = 10;
     float currentTime = 0;
     float dt = 1;

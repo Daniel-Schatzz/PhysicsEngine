@@ -2,6 +2,8 @@ namespace PhysicsEngine {
     class Object {
         public:
             Object();
+            ~Object();
+
 
             void destroy();
             void applyForce(double x_l, double y_l, double f_x, double f_y, int body);

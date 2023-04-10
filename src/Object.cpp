@@ -2,6 +2,7 @@
 #include "../include/utilities.h"
 
 #include <cstring>
+#include <assert.h>
 #include <cmath>
 
 PhysicsEngine::Object::Object() {
@@ -25,6 +26,10 @@ PhysicsEngine::Object::Object() {
 
     n = 0;
     dt = 0.0;
+}
+
+PhysicsEngine::Object::~Object() {
+    assert(n == 0);
 }
 
 void PhysicsEngine::Object::destroy() {

@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.10)
+
+set_property(GLOBAL PROPERTY USE_FOLDERS ON)
+set_property(GLOBAL PROPERTY PREDEFINED_TARGETS_FOLDER "cmake")
+
+project(PhysicsEngine)
+
+set(CMAKE_CXX_STANDARD 11)
+
+#==============================================================
+
+add_library(simple-2d-constraint-solver STATIC
+	# Source files
+	src.Object.cpp
+	src.utilities.cpp
+	src.Main.cpp
+
+	# Header files
+	include.Object.h
+	include.utilities.cpp
+)

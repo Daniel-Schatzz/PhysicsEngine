@@ -1,8 +1,8 @@
 namespace PhysicsEngine {
     class Object {
         public:
-            Object();
-            ~Object();
+            // Object();
+            // ~Object();
 
 
             void destroy();

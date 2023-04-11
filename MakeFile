@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 #==============================================================
 
-add_library(simple-2d-constraint-solver STATIC
+add_library(PhysicsEngine STATIC
 	# Source files
 	src.Object.cpp
 	src.utilities.cpp

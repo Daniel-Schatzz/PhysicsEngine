@@ -1,5 +1,6 @@
 #include "../include/Object.h"
-#include "../include/utilities.h"
+#include "../include/util.h"
+#include "util.cpp"
 
 #include <cstring>
 #include <assert.h>

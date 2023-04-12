@@ -1,4 +1,4 @@
-#include "../include/utilities.h"
+#include "../include/util.h"
 
 void PhysicsEngine::freeArray(double *&data) {
     delete[] data;
